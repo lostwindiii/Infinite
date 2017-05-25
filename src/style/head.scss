@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-05-24 14:35:28
+ * @version $Id$
+ */
+$pink: #FD3F76;
+$grey: #95969A;
+$borderColor:#e0e0e0;
+.head-bg{
+	display: block;
+	height: 80px;
+	border-top:20px solid $grey;
+	border-bottom: 1px solid $borderColor;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.head{
+		width: 1080px;
+		height: 80px;
+		margin: 0 auto;
+		.head-left{
+			float: left;
+			.logo{
+				display: block;
+				width: 200px;
+				height: 80px;
+				background: url('../assets/logo.png') no-repeat left;
+				background-size: 100%;
+				float: left;
+			}
+			.nav-menu{
+				float: left;
+				height: 80px;
+				margin: 0;
+				padding: 0;
+				.nav-li{
+					float: left;
+					list-style: none;
+					margin-right: 40px;
+					font-size: 20px;
+					height: 40px;
+					line-height: 40px;
+					margin-top: 20px;
+					&:hover{
+						border-bottom: 2px solid $pink;
+						a{
+							color: $pink;
+						}
+					}
+					>a{
+						color: #555;
+						text-decoration: none;
+					}
+				}
+				.nav-on{
+					border-bottom: 2px solid $pink;
+					a{
+						color: $pink;
+					}
+				}
+			}
+		}
+		.head-right{
+			float: right;
+			.search{
+				height: 26px;
+				width: 180px;
+				border: 1px solid #b5b5b5;
+				border-radius:20px;
+				margin-top: 26px;
+				position: relative;
+				float: left;
+				.search-input{
+					border: 0;
+					background: none;
+					outline: none;
+					height: 24px;
+					line-height: 24px;
+					width: 140px;
+					float: right;
+					color: #555;
+					padding-right: 10px;
+					font-size: 12px;
+				}
+				.search-icon{
+					display: block;
+					width: 14px;
+					height: 14px;
+					background: url('../assets/search.png') no-repeat center;
+					position: absolute;
+					top: 6px;
+					left: 10px
+				}
+			}
+			.head-login{
+				float: right;
+				height: 80px;
+				margin-left: 40px;
+				>span{
+					margin-left:10px;
+					height: 20px;
+					border: 1px solid $pink;
+					line-height: 20px;
+					margin-top: 30px;
+					display: inline-block;
+					border-radius: 4px;
+					width: 50px;
+					text-align: center;
+					&:hover{
+						background: $pink;
+						>a{
+							color: #fff;
+						}
+					}
+					>a{
+						color: $pink;
+						text-decoration: none;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
